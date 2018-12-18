@@ -43,7 +43,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  if cart.includes(item) {
+    var index = cart.indexOf(item)
+    cart.splice(index, 1)
+  }
+  return cart
 }
 
 function placeOrder(cardNumber) {
