@@ -34,9 +34,10 @@ function viewCart() {
 
 function total() {
   let i = 0
+  var sum = getCart()[0].itemPrice
   while (i < cart.length) {
-    var sum += getCart()[i].itemPrice
     i++
+    sum += getCart()[i].itemPrice
   }
   return sum
 }
