@@ -37,7 +37,8 @@ function total() {
   var bin = getCart()
   var sum = bin[i]
   while (i < cart.length) {
-    sum += bin[i+1]
+    sum += bin[i]
+    i++
   }
   return sum
 }
