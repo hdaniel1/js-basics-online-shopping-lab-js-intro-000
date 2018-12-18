@@ -46,8 +46,11 @@ function removeFromCart(item) {
   if (cart.includes(item)) {
     var index = cart.indexOf(item)
     cart.splice(index, 1)
+    return cart
   }
-  return cart
+  else {
+    return 'That item is not in your cart.'
+  }
 }
 
 function placeOrder(cardNumber) {
